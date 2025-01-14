@@ -1,0 +1,229 @@
+/* Global Styles */
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h2, h3 {
+    padding: 1em 0 0.5em;
+    font-weight: 600;
+}
+
+p {
+    padding-bottom: 1em;
+    line-height: 1.5;
+}
+
+/* Cart Container */
+.cart-container {
+    display: flex;
+    gap: 20px;
+    padding: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Product Container */
+.products-container {
+    width: 100%;
+    max-width: 55em;
+}
+
+/* Products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between product cards */
+    justify-content: center;
+    
+}
+
+/* Product Cards */
+.products > div {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px; /* Reduced padding */
+    width:250px; /* Reduced width */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.products > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.products > div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.products > div h3 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.products > div p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+button.add-to-cart {
+    border: none;
+    background-color: #15ec31;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button.add-to-cart:hover {
+    background-color: #13551b;
+}
+
+/* Shopping Cart */
+.cart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.cart > div {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    background-color: #fefefe;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart > div h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.cart > div p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    font-weight:bold;
+}
+
+.cart > div button {
+    border: none;
+    background-color: #e57373;
+    color: #fff;
+    padding: 0.3em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.cart > div button:hover {
+    background-color: #d32f2f;
+}
+
+/* Checkout */
+.checkout-container {
+    max-width: 34em;
+    padding: 2em;
+    background: #efefef;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkout {
+    margin-bottom: 4em;
+}
+
+.cart-total {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.received {
+    font-size: 1.5em;
+    padding: 0.3em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+button.pay {
+    width: 100%;
+    background-color: #07b118;
+    color: #fff;
+    padding: 0.8em;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button.pay:hover {
+    background-color: #47645b;
+}
+
+/* Payment Summary */
+.pay-summary {
+    margin-top: 1em;
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Empty Button */
+.empty-btn {
+    text-align: center;
+    margin-top: 1em;
+}
+
+button.empty {
+    background-color: #e57373;
+    color: #fff;
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.empty:hover {
+    background-color: #d32f2f;
+}
